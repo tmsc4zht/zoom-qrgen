@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>zoom QR generator</title>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js" integrity="sha512-ZDSPMa/JM1D+7kdg2x3BsruQ6T/JpJo3jWDWkCZsP+5yVyp1KfESqLI+7RqB5k24F7p2cV7i2YHh/890y6P6Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <table>
+            <tbody>
+                <tr>
+                    <th>meetingID</th>
+                    <td>
+                        <input id="meet_id" placeholder="123 4567 8901" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>passcode</th>
+                    <td>
+                        <input id="passcode" placeholder="123456" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <span><a id="zoom_uri"></a></span>
+        </div>
+        <div id="qr"></div>
+        <script src="main.js"></script>
+    </body>
+</html>
+    
